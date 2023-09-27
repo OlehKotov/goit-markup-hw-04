@@ -122,14 +122,18 @@ ul {
   border-radius: 2px;
   background-color: #404bbf;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
-  content: "";
+  content: '';
 }
 
 .header-menu-link:active,
 .header-menu-link:hover,
 .header-menu-link:focus {
+  color: #404bbf;
+}
+
+.first-header-menu-link {
   color: #404bbf;
 }
 
@@ -154,6 +158,7 @@ ul {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -179,10 +184,10 @@ ul {
 }
 
 .hero {
+  max-width: 1440px;
   background-color: #2e2f42;
   padding: 188px 0;
   background-image: linear-gradient(
-      to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -260,6 +265,9 @@ ul {
   margin-bottom: 8px;
   height: 112px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .feature-icon {
@@ -316,6 +324,10 @@ ul {
   gap: 24px;
   justify-content: center;
   align-items: center;
+}
+
+.ourteam-icon {
+  fill: #f4f4fd;
 }
 
 .ourteam-icon-item {
@@ -380,6 +392,11 @@ ul {
   overflow: hidden;
 }
 .portfolio-overlay {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #F4F4FD;
+  padding: 40px 32px;
   background: #4d5ae5;
   position: absolute;
   top: 0;
@@ -432,12 +449,12 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 16px;
 }
 
 .footer-icon-list {
-  display: inline-flex;
+  display: flex;
   gap: 16px;
   justify-content: center;
   align-items: center;
@@ -467,5 +484,13 @@ ul {
 
 .footer-container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.footer-icon {
+  fill: #f4f4fd;
+}
+
+.footer-logo-container {
+  margin-right: 120px;
 }
