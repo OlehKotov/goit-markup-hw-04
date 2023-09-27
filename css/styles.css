@@ -96,6 +96,7 @@ ul {
   text-transform: uppercase;
   margin-right: 76px;
 }
+/* ========================================= */
 
 .header-logo-color {
   color: #2e2f42;
@@ -116,7 +117,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-menu-link:focus::after {
+.first-header-menu-link::after {
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -182,16 +183,18 @@ ul {
   display: flex;
   gap: 40px;
 }
+/* ==================================== */
 
 .hero {
   max-width: 1440px;
+  margin: 0 auto;
   background-color: #2e2f42;
   padding: 188px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/peopleoffice.png);
+    url(../images/img-name.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
